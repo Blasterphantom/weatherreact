@@ -73,7 +73,6 @@ export default function HomeComponent() {
     }
 
     let searchTextUrl = searchText;
-    console.log(searchTextUrl);
 
     let urlName =
       `https://api.openweathermap.org/data/2.5/weather?q=` +
@@ -126,13 +125,11 @@ export default function HomeComponent() {
     await fetch(urlName)
       .then((data) => data.json())
       .then((data) => {
-        console.log(data);
         setCity(data.name);
         setMin(Math.floor(data.main.temp_min) + "°");
         setMax(Math.floor(data.main.temp_max) + "°");
         setTemp(Math.floor(data.main.temp) + "°");
         let weatherIcon = data.weather[0].main;
-        console.log(weatherIcon);
 
         if (weatherIcon === "Clear") {
           setSunTodayPic(clear);
@@ -156,7 +153,6 @@ export default function HomeComponent() {
     await fetch(urlName2)
       .then((data) => data.json())
       .then((data) => {
-        console.log(data);
         setDayOne(Math.floor(data.list[7].main.temp) + "°");
         setDayTwo(Math.floor(data.list[15].main.temp) + "°");
         setDayThree(Math.floor(data.list[23].main.temp) + "°");
