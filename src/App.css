@@ -1,38 +1,326 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: Gowun;
+  src: url(./Assets/Gowun_Batang/GowunBatang-Regular.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background-color: #1E1E1E;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navContainer.container{
+  margin: 0;
+  width: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-bottom-style: solid;
+  border-bottom-color: #D72127;
+  border-bottom-width: 10px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navRow.row{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.homeContainer.container{
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.homeRow.row{
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.homeCol.col{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.emoji{
+  text-decoration: none;
+  color: white;
+  width: 180px !important;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.emoji:hover{
+  color: #D72127;
+}
+
+.buttonDiv{
+  width: 230px !important;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.favBtn.btn{
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  height: 45px;
+  width: 150px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.favBtn.btn:hover{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.homeBtn.btn{
+  background-color: #D72127;
+  border: none;
+  margin-left: 33px;
+  height: 45px;
+  width: 100px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeBtn.btn:hover{
+  background-color: #D72127;
+}
+
+.mb-3.input-group{
+  margin-top: 64px;
+  width: 70%;
+  padding-bottom: 25px !important;
+}
+
+.searchBtn{
+  width: 200px;
+  height: 75px;
+  font-size: 24px !important;
+  background-color: #D72127 !important;
+  border: none !important;
+}
+
+.searchBtn:hover{
+  background-color: #D72127 !important;
+}
+
+.cityDiv{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.cityTxt{
+  color: white;
+  font-size: 30px;
+  margin-top: 25px;
+}
+
+.star{
+  width: 35px !important;
+  height: 35px;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+.todayRow.row{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.todayCol.col{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.todayDiv{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.todayTxt{
+  color: #F9A133;;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 110px;
+  line-height: 133px;
+  margin: 0;
+}
+
+.todayTxt2{
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 73px;
+  margin: 0;
+}
+
+.sun{
+  width: 150px;
+  height: 150px;
+}
+
+.textSmall{
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+}
+
+.todayInnerCol.col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weatherRow.row{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-top: 98px;
+  justify-content: space-evenly;
+}
+
+.favoritesRow.row{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 23px;
+}
+
+.favorites{
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.weekWeather{
+  width: 250px !important;
+  height: 400px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.todayTxt3{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sunDiv{
+  width: 170px;
+  height: 170px;
+}
+.favorites{
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.favoritesDiv{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  line-height: 100px;
+  width: 50px !important;
+  text-align: center;
+  font-family: Gowun;
+}
+
+@media screen and (max-width: 479px) {
+  .emoji{
+    text-decoration: none;
+    color: white;
+    width: 110px !important;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .favBtn.btn{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    height: 45px;
+    width: 90px;
+    font-size: 14px;
+  }
+
+
+  .homeBtn.btn{
+    background-color: #D72127;
+    border: none;
+    margin-left: 10px;
+    height: 45px;
+    width: 75px;
+    font-size: 14px;
+  }
+
+  .sunPicBig{
+    width: 200px;
+    height: 200px;
+  }
+
+  .todayTxt{
+    color: #F9A133;;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 90px;
+    margin: 0;
+  }
+  
+  .todayTxt2{
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 34px;
+    margin: 0;
+  }
+
+  .sun{
+    width: 100px;
+    height: 100px;
   }
 }
