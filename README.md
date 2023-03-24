@@ -1,3 +1,7 @@
+# Peer review By jeremy L
+i like the UI for the site maybe could've added a few more things or features like the home button didn't do anything for me but the favorites scrolled down. And for mobile could have done the cards a different way so that there isnt so much scrolling and maybe did the favorites in a modal so that i dont have to scroll all the way back up
+There also is errors when i load the page
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
